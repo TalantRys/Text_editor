@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текстовый редактор</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa7901b600.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- TOOLS----------------------------------------------------------->
+    <div class="tools">
+        <div class="tools__file">
+            <button id="file-new" class="button file__new"><i class="far fa-file"></i>Файл</button>
+            <button id="file-open" class="button file__open"><i class="far fa-file"></i>Открыть</button>
+            <button id="file-save" class="button file__save"><i class="far fa-file"></i>Сохранить</button>
+        </div>
+        <hr>
+        <div class="tools__items">
+            <button class="button tools__button" data-element="undo"><i class="fas fa-undo-alt"></i></button>
+            <button class="button tools__button" data-element="redo"><i class="fas fa-redo-alt"></i></button>
+            <button class="button tools__button" data-element="bold"><i class="fas fa-bold"></i></button>
+            <button class="button tools__button" data-element="italic"><i class="fas fa-italic"></i></button>
+            <button class="button tools__button" data-element="underline"><i class="fas fa-underline"></i></button>
+            <button class="button tools__button" data-element="copy"><i class="far fa-copy"></i></button>
+            <button class="button tools__button" data-element="cut"><i class="fas fa-cut"></i></button>
+            <button class="button tools__button" data-element="InsertText"><i class="fas fa-paste"></i></button>
+            <button class="button tools__button" data-element="justifyleft"><i class="fas fa-align-left"></i></button>
+            <button class="button tools__button" data-element="justifyright"><i class="fas fa-align-right"></i></button>
+            <button class="button tools__button" data-element="justifycenter"><i class="fas fa-align-center"></i></button>
+            <button class="button tools__button" data-element="justifyfull"><i class="fas fa-align-justify"></i></button>
+            <button class="button tools__button" data-element="InsertOrderedList"><i class="fas fa-list-ol"></i></button>
+            <button class="button tools__button" data-element="InsertUnorderedList"><i class="fas fa-list-ul"></i></button>
+            <button class="button tools__button" data-element="Indent"><i class="fas fa-indent"></i></button>
+            <button class="button tools__button" data-element="Outdent"><i class="fas fa-outdent"></i></button>
+        </div>
+    </div>
+    <!-- EDITOR----------------------------------------------------------->
+    <section class="list-container">
+        <h1 class="title">Текстовый редактор</h1>
+        <div class="section-list">
+            <div contenteditable="true" class="list" id="list"></div>
+        </div>
+
+    </section>
+
+
+    <!-- SCRIPT --------------------------------------------------------->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

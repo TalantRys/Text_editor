@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(32, 109, 211);
+}
+.title{
+    font-family: 'Comfortaa', sans-serif;
+    color:white;
+    font-weight: 700;
+    margin: 20px 0 30px 0;
+}
+.tools{
+    background-color: white;
+    padding: 15px;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.tools__items{
+    flex-wrap: wrap;
+    display: flex;    
+    justify-content: center;
+    align-content: center;
+}
+.tools__button{
+    flex: 0 1 33.333%;
+    height: 34px;
+    margin: 0 5px;
+    color: rgb(32, 109, 211);
+    border: none;
+    background-color: transparent;
+}
+.tools__button:hover{
+    border: 1px solid #888;
+	border-radius: 3px;
+    box-shadow: 2px 2px 2px #ddd;
+}
+.list-container{
+    margin: 0 auto;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-list{
+    overflow-y: overlay;
+    width: 100%;
+    max-height: 877px;
+}
+.list{
+    padding: 15px;
+    margin: auto;
+    width: 595px;
+    height: 842px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 50%);
+}
+.list:not(:last-child) {
+    margin-bottom: 20px;
+}
+.list:focus{
+    outline: none;
+}
+hr{
+    background-color: rgb(32, 109, 211);
+    height: 3px;
+    width: 75%;
+    margin: 20px auto;
+}
+.tools__file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tools__file i{
+    color: white;
+    font-size: 20px;
+    margin: 0 10px 0 0px;
+}
+
+.tools__file .button{
+    min-width: 130px;
+    padding: 5px 6px;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    background-color: rgb(32, 109, 211);
+    border: none;
+    border-radius: 5px;
+}
+.tools__file .button:hover{
+    background-color: rgb(13, 91, 192);
+}
+.tools__file .button:active{
+    background-color: rgb(10, 73, 156);
+}
+
+.tools__file >*:not(:last-child){
+    margin: 0 0 10px 0;
+}
+.file__new {
+    background-color: transparent;
+}
+.file__open {
+    background-color: transparent;
+}
+.file__save {   
+    background-color: transparent;
+}
